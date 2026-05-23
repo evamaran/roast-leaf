@@ -2,11 +2,15 @@ import { loadLayout } from "../layout/loadLayout.js";
 import { getProducts } from "../api/products.js";
 import { initSearch } from "../components/search.js";
 
+// Works locally AND on GitHub Pages
 function isHomePage() {
+	const path = window.location.pathname;
+
 	return (
-		window.location.pathname.endsWith("index.html") ||
-		window.location.pathname === "/" ||
-		window.location.pathname === "/index"
+		path.endsWith("index.html") ||
+		path.endsWith("/") ||
+		path.endsWith("/index") ||
+		path.includes("/roast-leaf/") // GitHub Pages repo folder
 	);
 }
 

@@ -16,7 +16,7 @@ function createCarouselCard(product) {
 	const price = product.price ? `${priceValue.toFixed(2)} €` : "";
 
 	card.innerHTML = `
-		<a href="/product.html?id=${product.id}" class="carousel-card">
+		<a href="product.html?id=${product.id}" class="carousel-card">
 			<img src="${imageUrl}" alt="${imageAlt}" class="carousel-image"/>
 
 			<div class="carousel-info">
