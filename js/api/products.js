@@ -1,4 +1,4 @@
-const baseUrl = "/data/products.json";
+const baseUrl = "data/products.json";
 
 export async function getProducts() {
 	try {
