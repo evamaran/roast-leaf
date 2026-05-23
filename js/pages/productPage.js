@@ -6,7 +6,7 @@ const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
 // load products
-fetch("data/products.json")
+fetch("../data/products.json")
 	.then(res => {
 		if (!res.ok) throw new Error("Failed to load products file");
 		return res.json();
