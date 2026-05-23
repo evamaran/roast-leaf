@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.querySelector("#countryCode").value = profile.countryCode;
 	document.querySelector("#phone").value = profile.phone;
 	document.querySelector("#email").value = profile.email;
-
+ 
 	// Save profile changes
 	document.querySelector("#profileForm").addEventListener("submit", (event) => {
 		event.preventDefault();
