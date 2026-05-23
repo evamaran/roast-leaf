@@ -8,11 +8,13 @@ function isHomePage() {
 
 	return (
 		path.endsWith("index.html") ||
-		path.endsWith("/") ||
-		path.endsWith("/index") ||
-		path.includes("/roast-leaf/") // GitHub Pages repo folder
+		path === "/roast-leaf/" ||
+		path === "/roast-leaf/index.html" ||
+		path === "/" ||
+		path === "/index.html"
 	);
 }
+
 
 async function init() {
 	// Load layout first
