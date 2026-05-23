@@ -12,10 +12,10 @@ function handleProfileClick(event) {
 
 	if (isLoggedIn()) {
 		// user is logged in → go to profile page
-		window.location.href = "/profile.html";
+		window.location.href = "profile.html";
 	} else {
 		// user is not logged in → go to login page
-		window.location.href = "/login.html";
+		window.location.href = "login.html";
 	}
 }
 

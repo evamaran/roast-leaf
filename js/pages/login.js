@@ -18,7 +18,7 @@ form.addEventListener("submit", async (event) => {
 		saveToken(data.accessToken);
 		saveUser({ email: data.email });
 
-		window.location.href = "/profile.html";
+		window.location.href = "profile.html";
 
 	} catch (error) {
 		console.error("❌ Login error:", error);

@@ -45,7 +45,7 @@ form.addEventListener("submit", async (event) => {
 		message.style.color = "green";
 
 		setTimeout(() => {
-			window.location.href = "/profile.html";
+			window.location.href = "profile.html";
 		}, 1200);
 
 	} catch (error) {

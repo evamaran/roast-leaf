@@ -58,6 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Logout button
 	document.querySelector("#logoutBtn")?.addEventListener("click", () => {
 		logout(); // deletes token
-		window.location.href = "/login.html";
+		window.location.href = "login.html";
 	});
 });
