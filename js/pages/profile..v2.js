@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Redirect if not logged in
 	if (!token) {
-		window.location.href = "/login.html";
+		window.location.href = "login.html";
 	}
 
 	if (!user) {
