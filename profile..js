@@ -1,4 +1,4 @@
-import { getUser, getToken, logout } from "../api/auth.js";
+import { getUser, getToken, logout } from "./js/api/auth.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	const user = getUser();
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		message.style.color = "red";
 		return;
 	}
-
+	//This is a test to see if data is commited to git
 	// Create default profile if missing
 	if (!profile) {
 		message.textContent = "Profile data missing. Please register again.";
